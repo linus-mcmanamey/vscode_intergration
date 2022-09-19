@@ -4,6 +4,9 @@ pip:
 dbx:
 	dbx --version
 
+configure:
+	@databricks configure --token
+
 workspace:
 	@databricks workspace ls /Users/linus.mcmanamey@eliiza.com.au
 
@@ -13,5 +16,8 @@ clusters:
 repos:
 	@databricks repos list
 
-update_repos:
-	@databricks repos update --repo-id 1917648285147613 --branch main
+update_repo:
+	@databricks repos update --repo-id 3607344616150485 --branch master
+
+delete_repo:
+	@databricks repos delete --repo-id <repo-id>
