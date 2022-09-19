@@ -1,0 +1,12 @@
+dbx
+pandas
+pyspark
+pyparsing
+numpy
+pillow
+py
+py4j
+pytest
+pytz
+six
+wget
