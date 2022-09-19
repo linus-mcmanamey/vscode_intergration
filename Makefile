@@ -5,6 +5,7 @@ dbx:
 	dbx --version
 
 configure:
+
 	@databricks configure --token
 
 workspace:
@@ -24,3 +25,6 @@ delete_repo:
 
 configure_jobs:
 	@databricks jobs configure --version=2.1
+
+dbfs:
+	@databricks fs ls dbfs:/user
