@@ -21,3 +21,6 @@ update_repo:
 
 delete_repo:
 	@databricks repos delete --repo-id <repo-id>
+
+configure_jobs:
+	@databricks jobs configure --version=2.1
